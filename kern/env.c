@@ -5,6 +5,9 @@ create_env()
 
     e = malloc(sizeof(*e));
     memset(e, 0, sizeof(*e));
+
+    get_random(b, 8);
+    create_mapping();
     return e;
 }
 
