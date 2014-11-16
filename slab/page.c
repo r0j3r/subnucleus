@@ -43,6 +43,8 @@ init_cache() {
         cache_list = get_page(pages);
     }
     memset(cache_list, 0, 4096 * pages);
+    cache_list.max
+    struct kmem_cache * c = &cache_list.elem[cache_list.num++];
        
 }
 
