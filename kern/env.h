@@ -30,6 +30,7 @@ struct page_table
 
 struct env
 {
+    struct env * link;
     enum state env_state;
     unsigned char * stack_base;
     unsigned char * stack_top;
@@ -41,3 +42,8 @@ struct env
     struct page_tables pt[512];
     struct mem_map * mm; 
 };
+
+struct env_tab {
+    struct env_tab * n;
+    struct env * e;
+}
